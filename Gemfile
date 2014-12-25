@@ -5,8 +5,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.6'
 # Use postgresql as the database for Active Record
 gem 'pg'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -28,6 +26,15 @@ gem 'spring',        group: :development
 
 # Rspec
 gem 'rspec-rails'
+
+# Haml
+gem 'haml', '~> 4.0.6'
+
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.3'
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'font-awesome-sass', '~> 4.1.0'
+gem 'autoprefixer-rails', '~> 3.1.2.20141016'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
