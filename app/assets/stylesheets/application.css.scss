@@ -3,3 +3,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "welcome";
+
+.navbar > .container-fluid {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
