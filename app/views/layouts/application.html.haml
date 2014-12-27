@@ -10,5 +10,10 @@
     .container-fluid
       .navbar-header
         = link_to image_tag('shield.gif'), root_path, class: 'navbar-brand'
-        .navbar-text.h1 Lunch Club
+        .navbar-text
+          .h1
+            = link_to 'LunchClub', root_path
+          Presenting lunch specials for your local area.
+
+        .navbar-text.h2
   = yield

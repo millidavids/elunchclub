@@ -4,8 +4,23 @@
 @import "bootstrap";
 @import "welcome";
 
-.navbar > .container-fluid {
-  padding-left: 150px;
-  padding-right: 150px;
+.navbar {
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+
+  .container-fluid {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .navbar-header {
+    .navbar-text {
+      margin-left: 0px;
+
+      .h1 {
+        margin-bottom: 0px;
+      }
+    }
+  }
 }
 
