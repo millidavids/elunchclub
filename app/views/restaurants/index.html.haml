@@ -1,0 +1,15 @@
+.table-responsive
+  %table.table.table-hover
+    %thead
+      %th Restaurant
+      %th Placeholder
+      %th Placeholder
+      %th Placeholder
+    - @restaurants.each do |restaurant|
+      %tbody
+        %tr
+          %td= restaurant.name.capitalize
+          %td placeholder
+          %td placeholder
+          %td placeholder
+

@@ -7,7 +7,7 @@ users = User.create!([
 ])
 
 puts "Create Restaurants"
-restaurants = Restaurants.create!([
+restaurants = Restaurant.create!([
   {name: "Burgers and Tophats"},
   {name: "Hotdogs and Tanktops"},
   {name: "Salads and Hipsters"},

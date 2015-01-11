@@ -3,34 +3,36 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "welcome";
+@import "restaurants";
 
-.navbar {
-  background-color: rgba(255, 255, 255, 1);
-  border: none;
+.container-fluid {
+  padding-left: 150px;
+  padding-right: 150px;
 
-  .container-fluid {
-    padding-left: 150px;
-    padding-right: 150px;
-
-    @media (max-width: 992px) {
-      padding: 0px;
-    }
+  @media (max-width: 992px) {
+    padding: 0px;
   }
 
-  .navbar-brand {
-    height: 100%;
-  }
+  .navbar {
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
 
-  .navbar-text {
-    margin-left: 0px;
 
-    .h1 {
-      margin: 0px;
+    .navbar-brand {
+      height: 100%;
     }
 
-    .h6 {
-      @media(max-width: 442px) {
-        display: none;
+    .navbar-text {
+      margin-left: 0px;
+
+      .h1 {
+        margin: 0px;
+      }
+
+      .h6 {
+        @media(max-width: 442px) {
+          display: none;
+        }
       }
     }
   }

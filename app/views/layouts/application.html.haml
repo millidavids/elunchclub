@@ -6,8 +6,8 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-  .navbar.navbar-default
-    .container-fluid
+  .container-fluid
+    .navbar.navbar-default
       .navbar-brand
         = link_to image_tag('shield.gif'), root_path, class: 'img-responsive'
       .navbar-text
@@ -15,6 +15,7 @@
           = link_to 'LunchClub', root_path
         .h6
           Presenting lunch specials for your local area.
-      .h3.pull-right
-        = link_to 'Contact', root_path
-  = yield
+      - unless request.path == contact_index_path
+        .h3.pull-right
+          = link_to 'Contact', contact_index_path
+    = yield
